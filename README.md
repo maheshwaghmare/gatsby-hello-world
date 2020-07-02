@@ -18,6 +18,27 @@ npm run start  // To start the development.
 npm run deploy // To deploy and host on GitHub pages. @see https://maheshwaghmare.github.io/gatsby-hello-world/
 ```
 
+#### GitHub Deply
+
+Install GitHub pages
+```sh
+npm install gh-pages --save-dev
+```
+
+Add in `gatsby-config.js` file.
+```json
+module.exports = {
+  pathPrefix: "/{GithubProjectSlug}"
+}
+```
+
+Deploy
+```
+npm run deploy
+```
+
+Make sure you have set the gh-pages branch from GitHub projects settings section **GitHub Pages**
+
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
